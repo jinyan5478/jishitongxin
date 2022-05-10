@@ -1,5 +1,5 @@
 ![logo](https://github.com/gyf-dev/Screenshots/blob/master/ImmersionBar/readme_head.png)
-# ImmersionBar -- android 4.4以上沉浸式实现 
+# ImmersionBar -- android 4.4以上沉浸式实现 //标题
 [![version](https://img.shields.io/badge/version-3.2.2-brightgreen.svg)](https://bintray.com/geyifeng/maven/immersionbar) [![author](https://img.shields.io/badge/author-gyf--dev-orange.svg)](https://github.com/gyf-dev) [![简书](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-HeLe%E5%B0%8F%E5%AD%90%E6%8B%BD-blue.svg)](https://www.jianshu.com/p/2a884e211a62) [![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-314360549-red.svg)]()
 
 ## 直接看效果图，建议下载demo体验
@@ -72,6 +72,7 @@
                  .reset()  //重置所以沉浸式参数
                  .init();  //必须调用方可应用以上所配置的参数
     ```
+## 在各种UI下的实现方式
 ## 在Activity中实现沉浸式
 
 - java用法
@@ -111,8 +112,6 @@
     ```kotlin
         destroyImmersionBar(dialog)
     ```
-   
-<img width="300"  src="https://github.com/gyf-dev/Screenshots/blob/master/ImmersionBar/Screenshot_dialog.gif"/>
 
 ## 在PopupWindow中实现沉浸式，具体实现参考demo
    重点是调用以下方法，但是此方法会导致有导航栏的手机底部布局会被导航栏覆盖，还有底部输入框无法根据软键盘弹出而弹出，具体适配请参考demo。
@@ -124,13 +123,6 @@
 
 
      ```
-       
-## 解决EditText和软键盘的问题
-
-    .....
-
-## 当白色背景状态栏遇到不能改变状态栏字体为深色的设备时，解决方案
-   .....
    
 ## 混淆规则(proguard-rules.pro)
 
